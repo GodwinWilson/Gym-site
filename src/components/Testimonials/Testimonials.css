@@ -1,0 +1,121 @@
+.testimonials{
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+.test-l{
+    display: flex;
+    flex: 1 1;
+    gap: 2rem;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: #fff;
+}
+.test-l>:nth-child(1){
+    color: var(--blue);
+    font-weight: 700;
+}
+.test-l>:nth-child(2),
+.test-l>:nth-child(3){
+    font-size: 3rem;
+    font-weight: bold;
+}
+.test-l>:nth-child(4) {
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 1.3px;
+    line-height: 40px;
+}
+.test-r{
+    flex: 1;
+    position: relative;
+}
+.test-r>img{
+    position: absolute;
+    height: 20rem;
+    width: 17rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+}
+.test-r>:nth-child(1){
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid var(--blue);
+    background: transparent;
+    right: 9rem;
+    top: 0.9rem;
+}
+.test-r>:nth-child(2){
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    right: 7rem;
+    top: 4rem;
+    background: var(--plan2Card);
+}
+.arrows{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+}
+.arrows>img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:935px){
+    .testimonials{
+        flex-direction: column;
+    }
+    .test-l>:nth-child(2),
+    .test-l>:nth-child(3){
+        font-size: xx-large;
+    }
+    .test-r{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .test-r>div{
+        position: relative;
+        display: none;
+    }
+    .test-r>img{
+        position: relative;
+        top: 0;
+        right: 0;
+        align-self: center;
+    }
+    .test-r>:last-child{
+        display: block;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
